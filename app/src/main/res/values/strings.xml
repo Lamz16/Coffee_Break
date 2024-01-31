@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Coffee Break</string>
+    <string name="title_home">Home</string>
+    <string name="title_chart">Chart</string>
+    <string name="title_profile">Profile</string>
+    <string name="address">21 Fleet Sctreet, London</string>
+    <string name="Title">Coffe Break</string>
+    <string name="search">Search</string>
+    <string name="offer_of_the_day">Offer of the day</string>
+    <string name="real_price">$2.49</string>
+    <string name="item">Ice Tea lemon</string>
+    <string name="discount_price">$1.99</string>
+    <string name="add_to_chart">Add to chart</string>
+    <string name="popular">Popular</string>
+    <string name="coffee">Cappuccino Coffee</string>
+
+    <string-array name="menu_item">
+        <item>Espresso Coffee</item>
+        <item>Mocha Caramel Coffee</item>
+        <item>Cappuccino Coffee</item>
+    </string-array>
+
+    <string-array name="price">
+        <item>$2.49</item>
+        <item>$2.99</item>
+        <item>$2.80</item>
+    </string-array>
+
+    <integer-array name="images">
+        <item>@drawable/coffee1</item>
+        <item>@drawable/coffee2</item>
+        <item>@drawable/coffee3</item>
+    </integer-array>
+</resources>
