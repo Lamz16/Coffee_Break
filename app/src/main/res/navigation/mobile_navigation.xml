@@ -12,13 +12,13 @@
 
     <fragment
         android:id="@+id/navigation_chart"
-        android:name="com.lamz.coffeebreak.ui.dashboard.DashboardFragment"
+        android:name="com.lamz.coffeebreak.ui.chart.ChartFragment"
         android:label="@string/title_chart"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_chart" />
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.lamz.coffeebreak.ui.notifications.NotificationsFragment"
+        android:name="com.lamz.coffeebreak.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_profile" />
 </navigation>
