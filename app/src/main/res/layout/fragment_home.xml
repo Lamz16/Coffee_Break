@@ -14,7 +14,8 @@
         android:text="@string/Title"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/gd_start"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -23,7 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:src="@drawable/ic_location"
-        app:layout_constraintStart_toStartOf="@id/gd_start"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/appTitle" />
 
     <TextView
@@ -39,23 +41,10 @@
         android:layout_width="45dp"
         android:layout_height="0dp"
         android:src="@drawable/me"
-        app:layout_constraintEnd_toEndOf="@id/gd_end"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/gd_bottom"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/gd_end"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="370dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/gd_start"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_end="370dp" />
 
     <EditText
         android:id="@+id/search"
@@ -66,8 +55,10 @@
         android:drawableStart="@drawable/ic_search"
         android:hint="@string/search"
         android:padding="8dp"
-        app:layout_constraintEnd_toEndOf="@id/gd_end"
-        app:layout_constraintStart_toStartOf="@id/gd_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_address" />
 
     <include
@@ -76,8 +67,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@id/gd_end"
-        app:layout_constraintStart_toEndOf="@id/gd_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/search" />
 
     <TextView
@@ -88,15 +81,18 @@
         android:text="@string/popular"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@id/gd_start"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/banner_offer" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMenu"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintEnd_toStartOf="@id/gd_end"
-        app:layout_constraintStart_toEndOf="@id/gd_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/popular" />
 
     <androidx.constraintlayout.widget.Guideline
