@@ -1,6 +1,7 @@
 package com.lamz.coffeebreak.ui.home
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +14,7 @@ import com.lamz.coffeebreak.R
 import com.lamz.coffeebreak.databinding.FragmentHomeBinding
 import com.lamz.coffeebreak.dummy.ContentPopular
 import com.lamz.coffeebreak.ui.adapter.MenuAdapter
+import com.lamz.coffeebreak.ui.detail.DetailActivity
 
 class HomeFragment : Fragment() {
 
@@ -33,7 +35,10 @@ class HomeFragment : Fragment() {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
+        binding.bannerOffer.buy.setOnClickListener {
+            val intent = Intent(activity, DetailActivity::class.java)
+            startActivity(intent)
+        }
         homeViewModel.text.observe(viewLifecycleOwner) {
 
         }

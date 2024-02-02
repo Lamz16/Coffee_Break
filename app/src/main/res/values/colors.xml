@@ -9,5 +9,6 @@
     <color name="banner_brown">#3F2305</color>
     <color name="button">#F2EAD3</color>
     <color name="grey">#DFD7BF</color>
+    <color name="font">#808080</color>
 
 </resources>

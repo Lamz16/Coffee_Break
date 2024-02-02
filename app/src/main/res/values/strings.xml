@@ -13,6 +13,9 @@
     <string name="add_to_chart">Add to chart</string>
     <string name="popular">Popular</string>
     <string name="coffee">Cappuccino Coffee</string>
+    <string name="size">Size</string>
+    <string name="additives">Additives</string>
+    <string name="zero">0</string>
 
     <string-array name="menu_item">
         <item>Espresso Coffee</item>
@@ -24,6 +27,18 @@
         <item>$2.49</item>
         <item>$2.99</item>
         <item>$2.80</item>
+    </string-array>
+
+    <string-array name="size_drink">
+        <item>300 ml</item>
+        <item>400 ml</item>
+        <item>500 ml</item>
+    </string-array>
+
+    <string-array name="addittives">
+        <item>Sugar</item>
+        <item>Cinnamon</item>
+        <item>Syrup</item>
     </string-array>
 
     <integer-array name="images">
